@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="34px"
+        android:paddingTop="42px"
+        android:text="提示语"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="标题内容"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="0.5dp"
+            android:layout_height="43dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="236dp"
+        android:layout_height="233dp"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/img_bg"
+            android:layout_width="236dp"
+            android:layout_height="233dp"
+            android:background="@mipmap/head_bg02">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="215dp" />
+
+                <ImageView
+                    android:id="@+id/img_ifr"
+                    android:layout_width="222dp"
+                    android:layout_height="215dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg"
+            android:layout_alignRight="@id/img_bg"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_neg"
+                android:layout_width="117dp"
+                android:layout_height="56dp"
+                android:background="@drawable/pickimg_button_selector" />
+
+            <Button
+                android:id="@+id/btn_pos"
+                android:layout_width="117.5dp"
+                android:layout_height="56dp"
+                android:background="@drawable/camera_button_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
